@@ -1,8 +1,8 @@
 # Lottery Hardhat Project
 
-This project allow people enter raffle. Using Chainlink VRF to get provably random number and Chainlink Keeper to autmate trigger send money to the winner.
+This project allow people enter raffle. Using Chainlink VRF to get provably random number and Chainlink Keeper to send money to the winner.
 
-1. Hardhat update and some plugin update so many code change.
+1. Hardhat and some plugin update, many codes change.
 
 Example:
 Old code:
@@ -25,7 +25,7 @@ And delete this code
 await vrfCoordinatorV2Mock.fundSubcription(subscriptionId, VRF_SUB_FUND_AMOUNT)
 ```
 
-2. Deathly error #1: past the arguments to constructor of Smart Contract but not in order
+2. Deathly error #1: pass the arguments to constructor of Smart Contract but not in order
 
 3. In latest version of Chainlink/contracts 0.6.1 or after 0.4.1,
    we need to add consumer explicitly after deployment of contract
